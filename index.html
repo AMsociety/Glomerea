@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Busted Tusk Kauri Co.</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Georgia', serif;
+      background: #f5f1e9;
+      color: #3a3a2e;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #5a4d3c;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      color: #f5f1e9;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    header img {
+      max-width: 180px;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: #d7c9b6;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #f5f1e9;
+    }
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ddd6c7;
+    }
+    h1, h2, h3 {
+      font-family: 'Georgia', serif;
+      color: #5a4d3c;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.3rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    footer {
+      background: #5a4d3c;
+      color: #f5f1e9;
+      text-align: center;
+      padding: 1rem 1rem;
+      font-size: 0.9rem;
+      margin-top: auto;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+    }
+    /* Contact form */
+    form {
+      max-width: 480px;
+      margin-top: 1rem;
+      background: #f0ede4;
+      padding: 1rem 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(90,77,60,0.15);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+      color: #5a4d3c;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 1rem;
+      resize: vertical;
+    }
+    textarea {
+      min-height: 100px;
+    }
+    button {
+      margin-top: 1.2rem;
+      padding: 0.6rem 1.3rem;
+      background: #5a4d3c;
+      color: #f5f1e9;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-weight: 700;
+    }
+    button:hover {
+      background: #3f3628;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      header img {
+        max-width: 140px;
+      }
+      nav a {
+        margin: 0 0.5rem;
+        font-size: 1rem;
+      }
+      main {
+        margin: 1.5rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.ibb.co/Wkp0WSF/busted-tusk-logo.png" alt="Busted Tusk Logo" />
+    <nav>
+      <a href="#about">About</a>
+      <a href="#history">History</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>Busted Tusk Kauri Co.</h1>
+      <p><em>Crafting Legacy from Sacred Wood</em></p>
+      <p>Reclaimed from a legendary bluewater sailboat, every piece carries the stories of ancient forests, forgotten voyages, and enduring spirit.</p>
+
+      <h2>About Busted Tusk Kauri Co.</h2>
+      <p>Busted Tusk is the work of an eccentric traveling artisan woodsmith dedicated to honoring the sacred material of New Zealand kauri — a wood that holds the deep breath of ancient ecosystems and the weight of history. Reclaimed from a 1946 bluewater sailboat built by a master craftsman, the kauri carries whispers of the sea, the forest, and the hands that shaped it.</p>
+      <p>Each pendant and artifact crafted here is an offering — a tangible connection to the vast web of life, to indigenous Māori heritage, and to the stories buried beneath layers of colonialism and maritime exploration. This work seeks not only to preserve wood but to carry forward the truths of deep ecology, respect for the land, and a humble acknowledgment of the complex histories entangled with every grain.</p>
+    </section>
+
+    <section id="history">
+      <h2>The History Layer</h2>
+      <p>The kauri is more than timber; it is a living archive. For Māori, these mighty trees are sacred, embodying the spirit of the land and the ancestors. The arrival of British colonial powers brought upheaval, exploitation, and chains — both literal and metaphorical — that echo through history.</p>
+      <p>Busted Tusk’s reclaimed wood speaks to this layered past: from the voyages of James Cook and Pacific maritime exploration to the resilient cultures that endured beneath colonial shadows. Today, the bohemian spirit of Sausalito’s artisan community continues this tradition of creativity and respect, bridging worlds and histories through craft.</p>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery / Creations</h2>
+      <p>Each handcrafted pendant is carved with intention and reverence, made from sacred kauri reclaimed from a vessel that once crossed vast oceans. These pieces are not merely jewelry — they are vessels of story, memory, and ecological wisdom.</p>
+      <p><em>Images coming soon.</em></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact &amp; Connect</h2>
+      <p>To inquire about custom pieces, collaborations, or to learn more about the journey of Busted Tusk, please reach out:</p>
+
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <!-- Hidden input for Netlify bot spam prevention -->
+        <input type="hidden" name="form-name" value="contact" />
+        <p style="display:none;">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message / Commission Request</label>
+        <textarea id="message" name="message" placeholder="Describe your request..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <p style="margin-top:1rem;">Or email directly at: <a href="mailto:bustedtusk@gmail.com">bustedtusk@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Busted Tusk Kauri Co. — Carrying forward the legacy of ancient forests and enduring seas.
+  </footer>
+</body>
+</html>
