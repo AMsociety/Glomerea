@@ -1,0 +1,323 @@
+/* --------------------------------------------------
+   GLOMEREA
+   Ecological / botanical design
+-------------------------------------------------- */
+
+:root {
+    --background: #B5BBA5;
+    --paper: #D4D7CF;
+    --text: #283229;
+    --muted: #626A60;
+    --line: #9AA092;
+    --accent: #46543D;
+}
+
+/* Basic reset */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background: var(--background);
+    color: var(--text);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    line-height: 1.7;
+}
+
+/* Header */
+
+.site-header {
+    width: 100%;
+
+    background: var(--background);
+
+    text-align: center;
+
+    padding: 16px 20px 12px;
+}
+
+.site-header img {
+    display: block;
+
+    width: min(100%, 750px);
+
+    height: auto;
+
+    margin: 0 auto;
+}
+
+/* Navigation */
+
+.navigation {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+
+    padding: 0 20px;
+}
+
+.navigation a {
+    color: var(--text);
+
+    text-decoration: none;
+
+    padding: 15px 32px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 0.82rem;
+
+    letter-spacing: 0.14em;
+
+    text-transform: uppercase;
+
+    transition:
+        color 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.navigation a:hover {
+    background: var(--accent);
+
+    color: var(--background);
+}
+
+/* Main content */
+
+main {
+    width: min(100% - 40px, 900px);
+
+    margin: 0 auto;
+}
+
+/* Sections */
+
+.section {
+    background: var(--paper);
+
+    margin: 55px 0;
+
+    padding: 55px 65px;
+
+    border: 1px solid var(--line);
+
+    box-shadow:
+        0 3px 14px rgba(0, 0, 0, 0.10);
+}
+
+.section h1 {
+    margin: 0 0 20px;
+
+    color: var(--text);
+
+    font-size: 2rem;
+
+    font-weight: normal;
+
+    letter-spacing: 0.04em;
+}
+
+.section p {
+    margin: 0;
+
+    color: #3E4740;
+
+    font-size: 1.05rem;
+}
+
+/* Footer */
+
+footer {
+    border-top: 1px solid var(--line);
+
+    padding: 30px 20px;
+
+    margin-top: 70px;
+
+    text-align: center;
+
+    color: var(--muted);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 0.75rem;
+
+    letter-spacing: 0.08em;
+}
+
+.footer-logo {
+    display: block;
+
+    width: 120px;
+
+    height: auto;
+
+    margin: 0 auto 20px;
+}
+
+/* Images */
+
+.regional-image {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+}
+
+.research-image {
+    width: 100%;
+
+    margin: 40px 0;
+
+    padding: 0;
+
+    text-align: center;
+}
+
+.research-image img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    margin: 0 auto;
+}
+
+.research-image figcaption {
+    margin-top: 8px;
+
+    color: var(--muted);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 0.04em;
+}
+
+/* Paragraph spacing */
+
+#about p,
+#research p {
+    margin-bottom: 1.5rem;
+}
+
+/* Link groups */
+
+.media-links,
+.support-links {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.media-links a,
+.support-links a {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border: 1px solid var(--line);
+
+    color: var(--text);
+
+    background: var(--paper);
+
+    text-decoration: none;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 0.78rem;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
+}
+
+.media-links a:hover,
+.support-links a:hover {
+    background: var(--accent);
+
+    color: var(--background);
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        padding: 15px;
+    }
+
+    .navigation {
+        display: block;
+
+        padding: 0;
+    }
+
+    .navigation a {
+        display: block;
+
+        text-align: center;
+
+        padding: 12px;
+
+        border-bottom: 1px solid var(--line);
+    }
+
+    main {
+        width: min(100% - 24px, 900px);
+    }
+
+    .section {
+        margin: 30px 0;
+
+        padding: 35px 25px;
+    }
+
+    .section h1 {
+        font-size: 1.7rem;
+    }
+}
